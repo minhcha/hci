@@ -7,11 +7,11 @@
 		<thead>
 			<tr>
 				<th>Id</th>
-				<th>Customer</th>
-				<th>Address</th>
+				<th>Khách hàng</th>
+				<th>Địa chỉ</th>
 				<th>Số điện thoại</th>
-				<th>Order Date</th>
-				<th>Amount</th>
+				<th>Ngày đặt hàng</th>
+				<th>Giá tiền</th>
 				<th></th>
 			</tr>
 		</thead>

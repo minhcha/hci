@@ -15,10 +15,9 @@
 				 <li><a href="/home/about"><span class="glyphicon glyphicon-info-sign"></span>Về chúng tôi</a></li>
 				 <li><a href="/home/contact"><span class="glyphicon glyphicon-phone-alt"></span> Liên hệ</a></li>
 				 <li><a href="/home/feedback"><span class="glyphicon glyphicon-envelope"></span> Phản hồi</a></li>
-				 <li><a href="/home/faq"><span class="glyphicon glyphicon-question-sign"></span> Câu hỏi</a></li>
 				 <li class="dropdown">
 					<a class="dropdown-toggle" data-toggle="dropdown" href="#"> 
-						<span class="glyphicon glyphicon-user"></span> My Account
+						<span class="glyphicon glyphicon-user"></span> Tài khoản của tôi
 						<span class="caret"></span>
 					</a>
 					<ul class="dropdown-menu">
@@ -37,16 +36,12 @@
 								<li><a href="/order/items">Mặt hàng đã mua</a></li>
 								<c:if test="${sessionScope.user.admin}">
 									<li class="divider"></li>
-									<li><a href="/admin/home/index">Administration</a></li>
+									<li><a href="/admin/home/index">Trang Admin</a></li>
 								</c:if>					
 							</c:otherwise>
 						</c:choose>
 					</ul>
 				</li>
-			</ul>
-			<ul class="nav navbar-nav navbar-right nn-lang">
-				<li><a href="#"><img src="/static/images/en.png"></a></li>
-				<li><a href="#"><img src="/static/images/vi.png"></a></li>
 			</ul>
 		</div>
 	</div>

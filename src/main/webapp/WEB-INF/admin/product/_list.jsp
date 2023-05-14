@@ -18,12 +18,12 @@
 		<thead>
 			<tr>
 				<th>Id</th>
-				<th>Name</th>
-				<th>Unit Price</th>
-				<th>Quantity</th>
-				<th>Discount</th>
-				<th>Available</th>
-				<th>Category</th>
+				<th>Tên sản phẩm</th>
+				<th>Giá tiền</th>
+				<th>Số lượng</th>
+				<th>Giảm giá</th>
+				<th>Có sẵn</th>
+				<th>Danh mục</th>
 				<th></th>
 			</tr>
 		</thead>

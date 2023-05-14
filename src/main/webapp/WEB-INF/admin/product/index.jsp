@@ -10,12 +10,12 @@
 <ul class="nav nav-tabs">
 	<li class="active">
 		<a data-toggle="tab" href="#edit"> 
-			<span class="glyphicon glyphicon-edit"></span> Edit
+			<span class="glyphicon glyphicon-edit"></span> Chỉnh sửa
 		</a>
 	</li>
 	<li>
 		<a data-toggle="tab" href="#list">
-			<span class="glyphicon glyphicon-list"></span> List
+			<span class="glyphicon glyphicon-list"></span> Danh sách
 		</a>
 	</li>
 </ul>

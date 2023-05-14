@@ -7,11 +7,11 @@
 	<thead>
 		<tr>
 			<th>Id</th>
-			<th>Name</th>
-			<th>Unit Price</th>
-			<th>Discount</th>
-			<th>Quantity</th>
-			<th>Amount</th>
+			<th>Tên đơn</th>
+			<th>Giá từng sản phẩm</th>
+			<th>Giảm hía</th>
+			<th>Số lượng</th>
+			<th>Giá tổng</th>
 		</tr>
 	</thead>
 	<tbody>

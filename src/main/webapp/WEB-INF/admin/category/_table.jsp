@@ -9,8 +9,8 @@
 		<thead>
 			<tr>
 				<th>Id</th>
-				<th>Name</th>
-				<th>Name (VN)</th>
+				<th>Tên EN</th>
+				<th>Tên VN</th>
 				<th></th>
 			</tr>
 		</thead>

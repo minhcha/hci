@@ -34,25 +34,19 @@
 						<li><a href="/admin/inventory/category">Hàng tồn theo loại</a></li>
 						<li class="divider"></li>
 						<li><a href="/admin/revenue/product">Doanh số theo sản phẩm</a></li>
-						<li><a href="/admin/revenue/category">Doanh số theo loái</a></li>
+						<li><a href="/admin/revenue/category">Doanh số theo loại</a></li>
 						<li><a href="/admin/revenue/customer">Doanh số theo khách hàng</a></li>
 						<li class="divider"></li>
 						<li><a href="/admin/revenue/year">Doanh số theo năm</a></li>
-						<li><a href="/admin/revenue/quarter">Doanh số theo quý</a></li>
 						<li><a href="/admin/revenue/month">Doanh số theo tháng</a></li>
 					</ul></li>
 				<li class="dropdown"><a class="dropdown-toggle"
 					data-toggle="dropdown" href="#"> <span
-						class="glyphicon glyphicon-lock"></span>Security<span
+						class="glyphicon glyphicon-lock"></span>Bảo mật<span
 						class="caret"></span>
 				</a>
 					<ul class="dropdown-menu">
-						<li><a href="/admin/home/document">Create Document</a></li>
-						<li><a href="/admin/home/logoff">Sign Out</a></li>
-						<li><a href="/admin/home/change">Change Password</a></li>
-						<li class="divider"></li>
-						<li><a href="/admin/customer/index?permission">User
-								Permissions</a></li>
+						<li><a href="/admin/customer/index?permission">Phân quyền người dùng</a></li>
 					</ul></li>
 			</ul>
 		</div>

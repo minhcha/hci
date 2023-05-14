@@ -21,8 +21,8 @@
           title: 'BIỂU ĐỒ DOANH SỐ KHÁCH HÀNG',
           curveType: 'function',
           titleTextStyle: {
-		        color: "orangered",
-		        fontName: "Impact",
+		        color: "#0000FF",
+		        fontName: "Inter",
 		        fontSize: 20,
 		    },
           legend: { position: 'bottom' }

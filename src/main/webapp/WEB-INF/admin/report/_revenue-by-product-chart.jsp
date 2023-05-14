@@ -17,8 +17,8 @@
         var options = {
           title: 'BIỂU ĐỒ DOANH SỐ BÁN HÀNG SẢN PHẨM',
           titleTextStyle: {
-		        color: "orangered",
-		        fontName: "Impact",
+		        color: "#0000FF",
+		        fontName: "Inter",
 		        fontSize: 20,
 		    },
           is3D: true,

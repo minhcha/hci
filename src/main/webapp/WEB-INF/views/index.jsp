@@ -6,7 +6,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Online Shopping Mall</title>
+<title>Trang mua sắm trực tuyến</title>
 <tiles:insertAttribute name="head" />
 </head>
 <body>

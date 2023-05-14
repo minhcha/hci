@@ -17,7 +17,7 @@
 		</div>
 		<div class="panel-footer">
 			<button class="btn btn-warning">
-				<span class="glyphicon glyphicon-user"></span> Retrieve
+				<span class="glyphicon glyphicon-user"></span> Lấy lại mật khẩu
 			</button>	
 		</div>
 	</div>

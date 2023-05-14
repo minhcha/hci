@@ -42,14 +42,14 @@ header .nn-company{
 	bottom: 5px;
 }
 header .nn-company h1{
-	font-family: tahoma;
+	font-family: Inter;
 	font-weight: bold;
 	color: white;
 	font-size: 45px;
 	text-shadow: 0 0 2px black;
 }
 header .nn-company h4{
-	font-family: tahoma;
+	font-family: Inter;
 	letter-spacing: 2.2px;
 }
 /*-----MENU-----*/

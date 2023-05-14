@@ -3,7 +3,7 @@
 
 <div class="panel panel-danger">
 	<div class="panel-heading">
-		<h3 class="panel-title"><strong>INVENTORY BY CATEGORY</strong></h3>
+		<h3 class="panel-title"><strong>Hàng tồn theo loại sản phẩm</strong></h3>
 	</div>
 	<div class="panel-body">
 	</div>
@@ -12,9 +12,9 @@
 			<tr>
 				<th class="text-center">Loại sản phẩm</th>
 				<th class="text-center">Tổng số lượng</th>
-				<th class="text-center">Gía trị</th>
-				<th class="text-center">Min Price</th>
-				<th class="text-center">Max Price</th>
+				<th class="text-center">Gíá trị</th>
+				<th class="text-center">Giá thấp nhất</th>
+				<th class="text-center">Giá cao nhất</th>
 				<th class="text-center">Trung bình</th>
 			</tr>
 		</thead>

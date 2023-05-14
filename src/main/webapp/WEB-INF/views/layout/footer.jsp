@@ -2,15 +2,11 @@
 
 <div class="panel panel-default text-center">
 	<div class="panel-body">
-		<a href="#"><span class="glyphicon glyphicon-home"></span> Home</a> |
-		<a href="#"><span class="glyphicon glyphicon-info-sign"></span>
-			About Us</a> | <a href="#"><span
-			class="glyphicon glyphicon-phone-alt"></span> Contact Us</a> | <a
-			href="#"><span class="glyphicon glyphicon-envelope"></span>
-			Feedback</a> | <a href="#"><span
-			class="glyphicon glyphicon-question-sign"></span> FAQs</a>
+		<a href="http://localhost:8081/home/index"><span class="glyphicon glyphicon-home"></span> Trang chủ</a> |
+		<a href="http://localhost:8081/home/about"><span class="glyphicon glyphicon-info-sign"></span> Về chúng tôi</a> |
+		<a href="http://localhost:8081/home/contact"><span class="glyphicon glyphicon-phone-alt"></span> Liên hệ</a> |
+		<a href="http://localhost:8081/home/feedback"><span class="glyphicon glyphicon-envelope"></span> Phản hồi</a>
 	</div>
-	<div class="panel-footer">Spring Boot &copy;2020. All rights
-		reserved.</div>
+	<div class="panel-footer">Spring Boot &copy;2023. All rights reserved.</div>
 </div>
 
