@@ -8,7 +8,7 @@
 
 	<!-- thuộc tính name : gọi url bắt đầu bằng admin để chọn cái layout -->
 	<!-- put : đục lỗ trong file khi đc trả về -->
-<!-- 	 khai báo file trong titesConfig -->
+	<!-- 	 khai báo file trong titesConfig -->
 	<!-- Admin Layout -->
 	<definition name="admin.definition" template="/WEB-INF/admin/layout.jsp">
 		<put-attribute name="head" value="/WEB-INF/admin/layout/head.jsp" />
