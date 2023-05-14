@@ -17,7 +17,7 @@
 				 <li><a href="/home/feedback"><span class="glyphicon glyphicon-envelope"></span> Phản hồi</a></li>
 				 <li class="dropdown">
 					<a class="dropdown-toggle" data-toggle="dropdown" href="#"> 
-						<span class="glyphicon glyphicon-user"></span> Tài khoản của tôi
+						<span class="glyphicon glyphicon-user"></span>
 						<span class="caret"></span>
 					</a>
 					<ul class="dropdown-menu">
