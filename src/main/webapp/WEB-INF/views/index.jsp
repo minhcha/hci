@@ -14,10 +14,7 @@
 <tiles:insertAttribute name="head" />
 </head>
 <body style="font-family: Roboto, sans-serif">
-	<div class="container">
-<%--		<header class="row">--%>
-<%--			<tiles:insertAttribute name="header" />--%>
-<%--		</header>--%>
+	<div>
 		<nav class="row">
 			<tiles:insertAttribute name="menu" />
 		</nav>
@@ -33,7 +30,7 @@
 				</div>
 			</aside>
 		</div>
-		<footer class="row">
+		<footer class="row" style="margin-left: 0px;">
 			<tiles:insertAttribute name="footer" />
 		</footer>
 	</div>
