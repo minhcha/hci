@@ -1,5 +1,6 @@
 <%@ page pageEncoding="utf-8"%>
-<h2>GIỚI THIỆU</h2>
+<%@ include file="/common/taglib.jsp"%>
+<h2 style="text-align: center">GIỚI THIỆU</h2>
 <body>
 <div class="container">
     <h3>Chào mừng bạn đến với website của chúng tôi!</h3>

@@ -1,5 +1,6 @@
 <%@ page pageEncoding="utf-8"%>
-<h2>GÓP Ý</h2>
+<%@ include file="/common/taglib.jsp"%>
+<h2 style="text-align: center">GÓP Ý</h2>
 <body>
 <ul>
     <li><a href="https://www.facebook.com/profile.php?id=100012616721458">19110171 - Hoàng Minh Châu</a></li>
