@@ -1,5 +1,6 @@
 <%@ page pageEncoding="utf-8"%>
-<h2>LIÊN HỆ</h2>
+<%@ include file="/common/taglib.jsp"%>
+<h2 style="text-align: center">LIÊN HỆ</h2>
 <div class="contact-info">
     <div class="content">
         <p>Quảng cáo, hợp tác: liên hệ <a href="mailto:caoxuanthang1221@gmail.com">caoxuanthang1221@gmail.com</a></p>
@@ -17,6 +18,12 @@
             </div>
         </div>
         <div class="map-wrapper">
+            <style>
+                .map-wrapper {
+                    display: flex;
+                    justify-content: center;
+                }
+            </style>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.485467675198!2d106.76933817567772!3d10.850632389302671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752763f23816ab%3A0x282f711441b6916f!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBTxrAgcGjhuqFtIEvhu7kgdGh14bqtdCBUaMOgbmggcGjhu5EgSOG7kyBDaMOtIE1pbmg!5e0!3m2!1svi!2s!4v1684039783979!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>

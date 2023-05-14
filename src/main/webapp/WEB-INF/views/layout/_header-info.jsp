@@ -3,10 +3,10 @@
 	<div class="col-sm-4"
 		class="col div-no-padding medium-3 small-6 large-3">
 		<div class="col-inner">
-			<a class="plain" href="http://tanthanhdanh.vn/lua-chon-cau-hinh/">
+			<a class="plain" href="https://hcmute.edu.vn/">
 			</a>
 			<div class="icon-box featured-box icon-box-left text-left">
-				<a class="plain" href="http://tanthanhdanh.vn/lua-chon-cau-hinh/">
+				<a class="plain" href="https://hcmute.edu.vn/">
 					<div class="icon-box-img" style="width: 40px">
 						<div class="icon">
 							<div class="icon-inner">
@@ -18,15 +18,15 @@
 					</div>
 				</a>
 				<div class="icon-box-text last-reset">
-					<a class="plain" href="http://tanthanhdanh.vn/lua-chon-cau-hinh/">
+					<a class="plain" href="https://hcmute.edu.vn/">
 					</a>
 					<h4>
-						<a class="plain" href="http://tanthanhdanh.vn/lua-chon-cau-hinh/"><span
+						<a class="plain" href="https://hcmute.edu.vn/"><span
 							style="color: #008000;"></span></a><a style="color: #008000;"
-							href="/lua-chon-cau-hinh/">Lựa chọn cấu hình</a>
+							href="#">Lựa chọn cấu hình</a>
 					</h4>
 					<p>
-						<a href="/lua-chon-cau-hinh/">Lựa chọn sản phẩm máy theo ý bạn</a>
+						<a href="#">Lựa chọn sản phẩm máy theo ý bạn</a>
 					</p>
 				</div>
 			</div>
