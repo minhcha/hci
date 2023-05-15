@@ -1,12 +1,88 @@
 <%@ page pageEncoding="utf-8"%>
-
-<div class="panel panel-default text-center">
-	<div class="panel-body">
-		<a href="http://localhost:8081/home/index"><span class="glyphicon glyphicon-home"></span> Trang chủ</a> |
-		<a href="http://localhost:8081/home/about"><span class="glyphicon glyphicon-info-sign"></span> Về chúng tôi</a> |
-		<a href="http://localhost:8081/home/contact"><span class="glyphicon glyphicon-phone-alt"></span> Liên hệ</a> |
-		<a href="http://localhost:8081/home/feedback"><span class="glyphicon glyphicon-envelope"></span> Phản hồi</a>
+<%@ include file="/common/taglib.jsp"%>
+<footer class="footer_section" style="width: 100vw;margin: 0">
+	<div style="width: 80%; margin: 0 auto; font-size: 16px">
+		<div class="row">
+			<div class="col-md-4 col-lg-3 footer-col" >
+				<div class="footer_contact">
+					<h3>
+						About
+					</h3>
+					<p>
+						Necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with
+					</p>
+					<div class="footer_social">
+						<a href="">
+							<i class="fa fa-facebook" aria-hidden="true"></i>
+						</a>
+						<a href="">
+							<i class="fa fa-twitter" aria-hidden="true"></i>
+						</a>
+						<a href="">
+							<i class="fa fa-linkedin" aria-hidden="true"></i>
+						</a>
+						<a href="">
+							<i class="fa fa-instagram" aria-hidden="true"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-lg-3 footer-col">
+				<div class="footer_contact">
+					<h3>
+						Reach at..
+					</h3>
+					<div class="contact_link_box">
+						<a href="">
+							<i class="fa fa-map-marker" aria-hidden="true"></i>
+							<span>
+                  Location
+                </span>
+						</a>
+						<a href="">
+							<i class="fa fa-phone" aria-hidden="true"></i>
+							<span>
+                  Call +01 1234567890
+                </span>
+						</a>
+						<a href="">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+							<span>
+                  demo@gmail.com
+                </span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-lg-3 footer-col">
+				<div class="footer_contact">
+					<h3>
+						Subscribe
+					</h3>
+					<form action="#">
+						<input type="text" placeholder="Enter email" />
+						<button type="submit">
+							Subscribe
+						</button>
+					</form>
+				</div>
+			</div>
+			<div class="col-md-4 col-lg-3 footer-col">
+				<div class="map_container">
+					<div class="map">
+						<div>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.485467675198!2d106.76933817567772!3d10.850632389302671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752763f23816ab%3A0x282f711441b6916f!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBTxrAgcGjhuqFtIEvhu7kgdGh14bqtdCBUaMOgbmggcGjhu5EgSOG7kyBDaMOtIE1pbmg!5e0!3m2!1svi!2s!4v1684039783979!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-info">
+			<p>
+				&copy; <span id="displayYear"></span> All Rights Reserved By
+				<a href="https://html.design/">Free Html Templates</a>
+			</p>
+		</div>
 	</div>
-	<div class="panel-footer">Spring Boot &copy;2023. All rights reserved.</div>
-</div>
-
+</footer>
+<!-- footer section -->
