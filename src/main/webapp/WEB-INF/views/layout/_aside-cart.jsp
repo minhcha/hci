@@ -11,9 +11,9 @@
 			<img id="cart-img" src="/static/images/shopping-cart.jpg">
 		</div>
 		<ul class="col-xs-7 text-center">
-		
+
 		<!-- truy xuất tới thuộc tính trong bean <==> countCart = getCountCart -->
-		
+
  			<li><strong id="cart-cnt">${cart.countCart}</strong> món hàng</li>
 			<li><strong id="cart-amt">${cart.amountCart}</strong> usd</li>
 			<li><a href="/cart/view">Xem chi tiết</a></li>

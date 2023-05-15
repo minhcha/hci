@@ -1,3 +1,20 @@
+$(document).ready(function(){
+	const subject1 = {
+		items : 1,
+		loop: true,
+		autoplay:true,
+		autoplayTimeout:2000,
+	}
+	$(".owl-carousel").owlCarousel(subject1);
+});
+function myMap() {
+	var mapProp = {
+		center: new google.maps.LatLng(40.712775, -74.005973),
+		zoom: 18,
+	};
+	var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+}
+myMap();
 $(function() {
 	$(".btn-like").click(function() {
 		var id = $(this).parents("[data-id]").attr("data-id")

@@ -1,3 +1,5 @@
+body{width: 100vw}
+
 .estore-prod{
 	height: 150px !important;
 	max-width: 100%;
@@ -6,8 +8,9 @@
 	max-width: 100%;
 	max-height: 400px;
 }
+
 .detail-info li{
-	font-variant: small-caps;
+	font-variant: none;
 	font-size: larger;
 	line-height: 30px;
 }
@@ -31,7 +34,6 @@
 	right:0px;
 }
 
-}
 /*-----HEADER-----*/
 header{
 	position: relative;
@@ -54,18 +56,17 @@ header .nn-company h4{
 }
 /*-----MENU-----*/
 .navbar a{
-	font-variant: small-caps;
 }
 .nn-lang a{
 	padding: 10px 0 0 10px !important;
 }
 /*-----ASIDE-----*/
 aside .panel-title{
-	font-variant: small-caps;
+	font-variant: none;
 	font-weight: bolder !important;
 }
 aside .nn-cart{
-	font-variant: small-caps;
+	font-variant: none;
 }
 aside .nn-cart img{
 	width: 60px;
@@ -82,7 +83,7 @@ footer a{
 /*-----product/list.jsp-----*/
 .nn-prod .panel-title{
 	font-size: smaller;
-	font-variant: small-caps;
+	font-variant:none;
 	font-weight: bolder;
 }
 .nn-prod .panel-body img {
@@ -106,7 +107,7 @@ footer a{
 
 .nn-detail .panel-body{
 	font-size: larger;
-	font-variant: small-caps;
+	font-variant: none;
 	line-height: 28px;
 }
 .nn-detail .panel-body img{
@@ -147,7 +148,7 @@ footer a{
 	margin-left: 5px;
 }
 .form-group label:first-child{
-	font-variant: small-caps;
+	font-variant: none;
 }
 .img-wait{
     text-align: center;

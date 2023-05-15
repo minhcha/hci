@@ -9,41 +9,32 @@
 <script src="/static/slideshow/js/jquery.catslider.js"></script>
 <link href="/static/slideshow/css/catslider.css" rel="stylesheet" />
 
-<style>
-.mi-slider {
-	height: 330px;
-}
-
-.mi-slider ul li img {
-	height: 200px;
-}
-</style>
-<script>
-	$(function() {
-		showCatSlider('.mi-slider', 5000);
-	});
-</script>
 </head>
 <body>
 	<!--Slide show-->
-	<div class="mi-slider">
-		<!-- 	hiện danh sách 5 sản phẩm -->
-		<c:forEach items="${slideshow_cates}" var="c">
-			<ul>
-				<c:forEach items="${c.products}" var="p">
-					<li><a href="/product/detail/${p.id}"> <img
-							src="/static/images/products/${p.image}" />
-							<h4>${p.unitPrice}</h4>
-					</a></li>
-				</c:forEach>
+<%--	<div class="mi-slider">--%>
+<%--		<!-- 	hiện danh sách 5 sản phẩm -->--%>
+<%--		<c:forEach items="${slideshow_cates}" var="c">--%>
+<%--			<ul>--%>
+<%--				<c:forEach items="${c.products}" var="p">--%>
+<%--					<li><a href="/product/detail/${p.id}"> <img--%>
+<%--							src="/static/images/products/${p.image}" />--%>
+<%--							<h4>${p.unitPrice}</h4>--%>
+<%--					</a></li>--%>
+<%--				</c:forEach>--%>
 
-			</ul>
-		</c:forEach>
-		<nav>
-			<c:forEach items="${slideshow_cates}" var="c">
-				<a href="#" style="font-size: 12px">${c.nameVN}</a>
-			</c:forEach>
-		</nav>
+<%--			</ul>--%>
+<%--		</c:forEach>--%>
+<%--		<nav>--%>
+<%--			<c:forEach items="${slideshow_cates}" var="c">--%>
+<%--				<a href="#" style="font-size: 12px">${c.nameVN}</a>--%>
+<%--			</c:forEach>--%>
+<%--		</nav>--%>
+<%--	</div>--%>
+	<div class="owl-carousel" style="height: 400px;width: 100%; padding: 0 20px">
+		<div style="width: 100%;height: 400px;background: url('/static/images/banner/banner1.png') no-repeat;background-size: 100% 400px;object-fit: cover"></div>
+		<div style="width: 100%;height: 400px;background: url('/static/images/banner/Banner-Fujifilm-XT4.png') no-repeat;background-size: 100% 400px;object-fit: cover"></div>
+		<div style="width: 100%;height: 400px;background: url('/static/images/banner/banner3.png') no-repeat ;background-size: 100% 400px;object-fit: cover"> </div>
 	</div>
 </body>
 </html>
