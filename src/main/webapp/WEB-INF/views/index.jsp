@@ -14,7 +14,7 @@
 <tiles:insertAttribute name="head" />
 </head>
 <body style="font-family: Roboto, sans-serif">
-	<div class="container">
+	<div >
 <%--		<header class="row">--%>
 <%--			<tiles:insertAttribute name="header" />--%>
 <%--		</header>--%>

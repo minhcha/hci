@@ -15,3 +15,11 @@
 <script src="/static/js/cart.js"></script>
 
  <script type="text/javascript" src="//js.nicedit.com/nicEdit-latest.js"></script>
+<!-- Animate -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+<!-- Google font Dosis -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@800&display=swap" rel="stylesheet">
+
