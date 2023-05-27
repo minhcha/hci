@@ -1,6 +1,7 @@
 package com.laptrinhoop.controller.web;
 
 import java.io.File;
+import java.util.Collection;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -22,9 +23,12 @@ import com.laptrinhoop.service.IAccountService;
 import com.laptrinhoop.service.ICookieService;
 import com.laptrinhoop.service.IHttpService;
 import com.laptrinhoop.service.IMailService;
+import com.laptrinhoop.service.ICartService;
 
 @Controller
 public class AccountController {
+	@Autowired
+	private ICartService cartSerive;
 
 	@Autowired
 	private IAccountService accountSerive;
@@ -47,7 +51,13 @@ public class AccountController {
 		model.addAttribute("password", userInfo[1].trim());
 		return "account/login";
 	}
-
+	@GetMapping("/layout/menu")
+	public String home(Model model) {
+		String[] userInfo = cookieService.getCookieValue("user", " , ").split(",");
+		Customer user = accountSerive.findById(userInfo[0].trim());
+		model.addAttribute("user", user);
+		return "/layout/menu";
+	}
 	@PostMapping("/account/login") // lúc ấn submit
 	public String login(Model model, @RequestParam("username") String username,
 			@RequestParam("password") String password,
@@ -59,6 +69,7 @@ public class AccountController {
 			model.addAttribute("message", "Mật khẩu không được để trống");
 			return "account/login";
 		}
+
 		Customer user = accountSerive.findById(username);
 		if (user == null || !password.equals(user.getPassword())) {
 			model.addAttribute("message", "Sai tên đăng nhập hoặc mật khẩu");
@@ -71,6 +82,7 @@ public class AccountController {
 			String securityUri = http.getSession("security-uri");
 			if (securityUri != null) 
 			{
+
 				return "redirect:" + securityUri;
 			} else
 				return "redirect:/home/index";

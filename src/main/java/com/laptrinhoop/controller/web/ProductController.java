@@ -47,13 +47,50 @@ public class ProductController {
 	public String listByCategory(@PathVariable("cId") Integer id, Model model) {
 		Category category = service.findById(id);
 		List<Product> listProduct = category.getProducts();
+		String nameVn = category.getNameVN();
 		model.addAttribute("list",listProduct);
+		model.addAttribute("nameVn",nameVn);
+
 		return "product/list";
+	}
+
+	@RequestMapping("/product/list-by-price/{value}")
+	public String listByPrice(@PathVariable("value") Integer value, Model model) {
+		List<Product> listByPrice = null;
+		double min, max;
+		switch (value) {
+			case 0:
+				listByPrice = serviceProduct.findAll();
+				break;
+			case 1:
+				min = 0;
+				max = 500000;
+				listByPrice = serviceProduct.findByPrice(max,min);
+				break;
+			case 2:
+				min = 500000;
+				max = 5000000;
+				listByPrice = serviceProduct.findByPrice(max,min);
+				break;
+			case 3:
+				min = 5000000;
+				max = 20000000;
+				listByPrice = serviceProduct.findByPrice(max,min);
+				break;
+			default:
+				min = 20000000;
+				listByPrice = serviceProduct.findByPriceMin(min);
+				break;
+		}
+
+		model.addAttribute("list",listByPrice);
+		model.addAttribute("value",value);
+		return "product/listByPrice";
 	}
 
 	@RequestMapping("/product/list-by-keywords")
 	public String listByKeyWords(@RequestParam("keywords") String keywords, Model model) {
-	//	model.addAttribute("list", elastic.searchElastiProduct(keywords));
+		model.addAttribute("list", serviceProduct.findByKeywords(keywords));
 		return "product/list";
 	}
 

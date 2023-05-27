@@ -38,19 +38,19 @@ public class ProductService extends GeneralService<Product, Integer>implements I
 	@Override
 	public List<Product> getViewProduct(String name, String id) {
 		String ids = cookieService.getCookieValue(name, id.toString());
-		if (!ids.contains(id.toString())) { 
+		if (!ids.contains(id.toString())) {
 			ids += "," + id.toString();
 		}
 		cookieService.createCookie(name, ids, 15);
-		return dao.findByIdsInCookie(ids); 
+		return dao.findByIdsInCookie(ids);
 	}
 
 	@Override
 	public List<Product> getFaVoProduct(String name, String id) {
 		String favos = cookieService.getCookieValue(name, "");
-		if (favos.length() > 0) 
+		if (favos.length() > 0)
 		{
-			return dao.findByIdsInCookie(favos); 
+			return dao.findByIdsInCookie(favos);
 		} else
 			return null;
 	}
@@ -61,6 +61,13 @@ public class ProductService extends GeneralService<Product, Integer>implements I
 		return dao.findByIdsInCookie(ids);
 	}
 
+	@Override
+	public List<Product> findByPrice(double max, double min) {
+		return dao.findByPrice(max, min);
+	}
 
-
+	@Override
+	public List<Product> findByPriceMin(double min) {
+		return dao.findByPriceMin(min);
+	}
 }

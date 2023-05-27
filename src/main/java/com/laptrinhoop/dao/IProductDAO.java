@@ -10,6 +10,7 @@ public interface IProductDAO extends IGeneralDAO<Product, Integer> {
      	List<Product> findByCategoryId(Integer id);
      	List<Product> findItemByHot(String key);
      	List<Product> findByIdsInCookie(String id);
-	
+    	List<Product> findByPrice(double max, double min);
 
+	List<Product> findByPriceMin(double min);
 }

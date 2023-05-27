@@ -54,4 +54,16 @@ public class ProductDAO extends GeneraDAO<Product, Integer> implements IProductD
 		return getResultList(hql);
 	}
 
+	@Override
+	public List<Product> findByPrice(double max, double min) {
+		String hql = "FROM Product p WHERE p.unitPrice < ?0 AND p.unitPrice > ?1";
+		return getResultList(hql, max, min);
+	}
+
+	@Override
+	public List<Product> findByPriceMin(double min) {
+		String hql = "FROM Product p WHERE p.unitPrice > ?0";
+		return getResultList(hql, min);
+	}
+
 }

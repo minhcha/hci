@@ -1,6 +1,6 @@
 <%@ page pageEncoding="utf-8"%>
 <div class="panel panel-primary">
-	<div class="panel-heading">
+	<div class="panel-heading" style="background: #00B46f;color: white;">
 		<h3 class="panel-title">
 			<span class="glyphicon glyphicon-fire"></span> HÀNG ĐẶC BIỆT
 		</h3>

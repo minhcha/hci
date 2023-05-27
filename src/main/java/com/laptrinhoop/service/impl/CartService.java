@@ -62,6 +62,10 @@ public class CartService implements ICartService {
 	}
 
 	@Override
+	public int getHehe() {
+		return 10;
+	}
+	@Override
 	public double getAmountCart() {
 		Collection<Product> ps = this.getItemsCart();
 		double amount = 0;
@@ -76,5 +80,4 @@ public class CartService implements ICartService {
 	public Collection<Product> getItemsCart() {
 		return map.values();
 	}
-
 }

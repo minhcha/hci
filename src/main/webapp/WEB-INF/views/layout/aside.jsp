@@ -2,11 +2,12 @@
 <%@ include file="/common/taglib.jsp"%>
 
 <!-- vùng search -->
-<jsp:include page="_aside-cart.jsp" />
-<jsp:include page="_aside-search.jsp" />
+<%--<jsp:include page="_aside-cart.jsp" />--%>
+<%--<jsp:include page="_aside-search.jsp" />--%>
 <!-- vùng category -->
 <c:import url="/home/aside/category" />
 <!-- vùng những hàng đặc biệt -->
 <jsp:include page="_aside-hot.jsp" />
+<jsp:include page="_aside-filter.jsp" />
 
 

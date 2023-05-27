@@ -1,14 +1,22 @@
 package com.laptrinhoop.service.impl;
 
 import java.io.File;
-
+import java.util.Properties;
 import javax.mail.internet.MimeMessage;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Service;
+import javax.mail.*;
 
+import javax.mail.Message;
+import javax.mail.MessagingException;
+import javax.mail.PasswordAuthentication;
+import javax.mail.Session;
+import javax.mail.Transport;
+import javax.mail.internet.InternetAddress;
+import javax.mail.internet.MimeMessage;
 import com.laptrinhoop.service.IMailService;
 
 @Service
@@ -16,19 +24,40 @@ public class MailService implements IMailService {
 	@Autowired
 	JavaMailSender sender;
 
-	/**
-	 * JavaMailSender interface con cua MailSender , hỗ trợ tin nhắn kiểu MiME
-	 * Gửi email
-	 * @param to      email người nhận
-	 * @param subject tiêu đề email
-	 * @param body    nội dung email
-	 * @param others  các thông số còn lại theo thứ tự sau
-	 * from: email người gửi
-	 * cc: chuỗi chứa danh sách email những người đồng nhận, cáchnhau dấu phẩy
-	 * bcc: chuỗi chứa danh sách email những người đồng nhận bí mật, cách nhau dấu phẩy
-	 * bcc: chuỗi chứa danh sách đường dẫn file đính kèm, cách  nhau dấu phẩy
-	 * @return true nếu gửi mail thành công, ngược lại là false
-	 */
+
+	public boolean send1(String to, String body) {
+		Properties props = new Properties();
+		props.put("mail.smtp.auth", "true");
+		props.put("mail.smtp.host", "smtp.gmail.com");
+		props.put("mail.smtp.socketFactory.port", 465);
+		props.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
+		props.put("mail.smtp.port", 465);
+
+		// get Session
+		Session session = Session.getDefaultInstance(props, new javax.mail.Authenticator() {
+			protected PasswordAuthentication getPasswordAuthentication() {
+				return new PasswordAuthentication("cailychauhoang@gmail.com", "Hoangminhchau123!");
+			}
+		});
+
+		// compose message
+		try {
+			MimeMessage message = new MimeMessage(session);
+			message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(to));
+			message.setSubject("Testing Subject");
+			message.setText("Welcome to gpcoder.com");
+
+			// send message
+			Transport.send(message);
+
+			System.out.println("Message sent successfully");
+			return true;
+		} catch (MessagingException e) {
+			throw new RuntimeException(e);
+		}
+	}
+
+
 	public boolean send(String to, String subject, String body, String... others) {
 		try {
 			MimeMessage mail = sender.createMimeMessage();
@@ -38,7 +67,7 @@ public class MailService implements IMailService {
 			helper.setText(body, true);
 
 			// Người gửi
-			String from = "Kỹ thuật lập trình hướng đối tượng <tuanvuplbp@gmail.com>";
+			String from = "cailychauhoang@gmail.com";
 			if (others.length > 0 && others[0] != null) {
 				from = String.format("%s <%s>", others[0], others[0]);
 			}

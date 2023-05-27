@@ -1,7 +1,7 @@
 <%@ page pageEncoding="utf-8"%>
 <h2>GIỚI THIỆU</h2>
 <body>
-<div class="container">
+<div class="container" style="width: 100%; text-align: justify">
     <h3>Chào mừng bạn đến với website của chúng tôi!</h3>
     <p>Chúng tôi tự hào giới thiệu một nền tảng thương mại điện tử chuyên cung cấp các sản phẩm đa dạng như <span class="highlight">đồng hồ đeo tay</span>, <span class="highlight">laptop</span> và <span class="highlight">máy ảnh</span>.</p>
     <p>Với sứ mệnh mang đến sự hài lòng cho khách hàng, chúng tôi cam kết cung cấp những sản phẩm chất lượng cao từ các thương hiệu uy tín trên thị trường. Bạn sẽ tìm thấy một bộ sưu tập đồng hồ đeo tay phong cách, từ các thiết kế đơn giản và tinh tế cho đến những mẫu sang trọng và đẳng cấp. Chúng tôi cũng cung cấp một loạt các dòng laptop với hiệu năng mạnh mẽ và thiết kế đẹp mắt, phục vụ tốt cho công việc và giải trí của bạn. Ngoài ra, chúng tôi cũng cung cấp các máy ảnh chuyên nghiệp để bạn có thể ghi lại những khoảnh khắc đáng nhớ trong cuộc sống.</p>

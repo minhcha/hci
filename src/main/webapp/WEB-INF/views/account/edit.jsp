@@ -53,7 +53,7 @@
 </form:form>
 <style>
 <!--
-$(function (){ 
+$(function (){
 $("#photo_file").change(function() {
 		if (this.files && this.files.length > 0) {
 			/* doan file reader javascript */

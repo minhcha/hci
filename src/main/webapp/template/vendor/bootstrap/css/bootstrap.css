@@ -10275,4 +10275,12 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6;
   }
 }
+
+.login-container input[type="email"] {
+  color:#ccc6c6;
+}
+
+.login-container input[type="email"]:hover {
+  border-color: #28d;
+}
 /*# sourceMappingURL=bootstrap.css.map */

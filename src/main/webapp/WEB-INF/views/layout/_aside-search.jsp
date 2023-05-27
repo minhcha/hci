@@ -10,7 +10,7 @@
 		<form action="/product/list-by-keywords" method="get">
 			<div class="input-group">
 				<input name="keywords" placeholder="Từ khóa" class="form-control">
-				<div class="input-group-addon">
+				<div type="submit" class="input-group-addon">
 					<span class="glyphicon glyphicon-search"></span>
 				</div>
 			</div>

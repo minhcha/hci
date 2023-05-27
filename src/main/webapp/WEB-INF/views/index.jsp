@@ -14,7 +14,8 @@
 <tiles:insertAttribute name="head" />
 </head>
 <body style="font-family: Roboto, sans-serif">
-	<div class="">
+<div class="notifications" style="z-index: 100"></div>
+	<div class="" style="position: relative; width: 100vw">
 <%--		<header class="row">--%>
 <%--			<tiles:insertAttribute name="header" />--%>
 <%--		</header>--%>
@@ -22,14 +23,13 @@
 			<tiles:insertAttribute name="menu" />
 		</nav>
 		<div class="row" style="margin: 0 10vw">
-			<article class="col-sm-9">
-				<div class="row">
+			<div class="col-sm-9">
 					<tiles:insertAttribute name="body" />
-				</div>
-			</article>
+			</div>
 			<aside class="col-sm-3">
 				<div class="row">
 					<tiles:insertAttribute name="aside" />
+
 				</div>
 			</aside>
 		</div>

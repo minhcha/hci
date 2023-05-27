@@ -11,8 +11,6 @@ public interface ICartService {
 	void clear();
 	int getCountCart();
 	double getAmountCart();
+	int getHehe();
 	Collection<Product> getItemsCart();
-	
-	
-
 }

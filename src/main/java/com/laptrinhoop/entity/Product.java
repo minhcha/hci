@@ -15,7 +15,6 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
 import org.springframework.format.annotation.DateTimeFormat;
-
 @Entity
 @Table(name = "Products")
 public class Product {
@@ -76,7 +75,6 @@ public class Product {
 	public Double getUnitPrice() {
 		return unitPrice;
 	}
-
 	public void setUnitPrice(Double unitPrice) {
 		this.unitPrice = unitPrice;
 	}
